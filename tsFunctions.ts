@@ -12,11 +12,13 @@ function printNames() : void{
 
 }
 
-//type for function
+//arguements & parameters
 function printNames1(empName: string) : void{
     console.log(person[0].employeeDesignamtion);
 
 }
+
+printNames1("yolo");
 
  // parameters
 function printNames3(name: string, dob:number, isEligible:boolean){
@@ -25,6 +27,18 @@ function printNames3(name: string, dob:number, isEligible:boolean){
 
 // default values
 function printNames4(name: string = 'default name', dob:number, isEligible:boolean){
+    
+}
+
+//optional - after optional should not have mandatory parms
+
+function printNames5(name: string = 'default name', dob?:number, isEligible:boolean){
+    
+}
+
+//optional at the end 
+
+function printNames6(name: string = 'default name', dob?:number, isEligible?:boolean){
     
 }
 
