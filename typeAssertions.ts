@@ -1,3 +1,4 @@
+import { Employee } from "./typeAliases";
 let employees : any[] =[
     {empName:"heeeloo", empNbr: 98798, empAddr:"Delhi"}
 ]
