@@ -8,3 +8,18 @@ let student: studentDetails[] | null= [
 ]
 
 let student1:studentDetails[] | null = null;
+
+
+export type adhardetails ={
+    adharnumber: number ;
+    adharName:string;
+    adharPh: number;
+    adharsec : number | null | undefined;
+}
+
+let myAdhar : adhardetails ={
+    adharnumber:453453,
+    adharName:"Shree",
+    adharPh:34534543,
+    adharsec:null
+}
