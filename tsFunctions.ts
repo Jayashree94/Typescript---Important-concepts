@@ -32,9 +32,9 @@ function printNames4(name: string = 'default name', dob:number, isEligible:boole
 
 //optional - after optional should not have mandatory parms
 
-function printNames5(name: string = 'default name', dob?:number, isEligible:boolean){
+//function printNames5(name: string = 'default name', dob?:number, isEligible:boolean){
     
-}
+//}
 
 //optional at the end 
 
@@ -43,4 +43,4 @@ function printNames6(name: string = 'default name', dob?:number, isEligible?:boo
 }
 
 printNames1('Jays');
-printNames4(undefined,3424,true)
+printNames4(undefined,3424,true) //if not needed to give in arguments need to pass as undefined but cannot ignore to give
