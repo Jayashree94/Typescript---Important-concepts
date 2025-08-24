@@ -1,6 +1,8 @@
 //static - access with the help of class only
 //global 
 
+//readonly - values created during construction call cannot be changed later
+
 class Employee1{
     //static readonly _name: string;
     static _name : string;
