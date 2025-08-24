@@ -1,4 +1,8 @@
-//type and interface almoset similar
+//type and interface almost similar - 
+// diff -> type -> cannot be inherited/implemented
+//                  cannot have additional properties in object apart ftom type defined
+//class implements interface => can have additional properties in class apart from interface defined
+//interface inhertance
 
 
 interface School {
@@ -7,6 +11,8 @@ interface School {
     isOpen: Boolean;
     getname():string | number
 }
+
+//type
 
 const schooldetails: School ={
     noOfStudents:500,
@@ -21,6 +27,7 @@ const schooldetails: School ={
    
 }
 
+//interface implements
 
 class KinderGardern implements School { 
     noOfStudents: 500;
@@ -39,13 +46,16 @@ console.log(kg);
 
 //////////////////////////////////////////
 
+//inheritance -> current plus parent porperties
 
 interface HigherSec extends School{
     getSeniorsSrudents():number;
 }
 
 
-class seniorStudent implements HigherSec {
+//senior student get properties of highersec and also school
+
+class seniorStudent implements HigherSec {   
     noOfStudents=500;
     schoolName="Sankara";
     isOpen=true;
