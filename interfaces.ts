@@ -1,8 +1,11 @@
+//type and interface almoset similar
+
+
 interface School {
     noOfStudents: number;
     readonly schoolName: string;
     isOpen: Boolean;
-    getname():string;
+    getname():string | number
 }
 
 const schooldetails: School ={
@@ -12,6 +15,10 @@ const schooldetails: School ={
     getname() {
         return this.schoolName
     },
+   // getname1(): string {                       cannot add additional methods in onject in case of just type inerface
+   //     return this.schoolName;
+   // }
+   
 }
 
 
@@ -22,14 +29,30 @@ class KinderGardern implements School {
     getname():string {
     return this.schoolName;
     }
+     getname1(): string {
+        return this.schoolName                       // can give additional methods also in case of interface implements
+    }
 }
 
 const kg = new KinderGardern();
 console.log(kg);
 
+//////////////////////////////////////////
 
-class senior{
 
+interface HigherSec extends School{
+    getSeniorsSrudents():number;
 }
 
-console.log(schooldetails);
+
+class seniorStudent implements HigherSec {
+    noOfStudents=500;
+    schoolName="Sankara";
+    isOpen=true;
+    getname() {
+        return this.schoolName
+    };
+    getSeniorsSrudents(): number {
+        return 100;
+    }
+}
